@@ -1,0 +1,19 @@
+body{
+    
+    background: url(../img/Construction.jpg);
+}
+
+#heading{
+    text-align: center;
+    /* height: 100px; */
+    height: 100%;
+    width: 100%;
+    
+}
+
+h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
