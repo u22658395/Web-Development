@@ -1,0 +1,81 @@
+*{
+   
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+h1{
+    margin: 50px 0 0 0;
+}
+
+#logo-container{
+    /* border: green 2px solid; */
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* padding-left: 30px; */
+
+}
+
+#logo{
+    width: 320px;
+    height: 70px;
+    /* border: red 2px solid; */
+    object-fit: contain;
+    margin: 30px 0 0 20px;
+}
+
+.heading{
+    color: white;
+    /* padding: 0 0 0 100px; */
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .sub-heading{
+    margin-left: 60px;
+} */
+
+#content-container{
+    margin: auto;
+    width: 100%;
+    height: 420px;
+    /* border: 2px solid lime; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    height: 180px;
+    width: 220px;
+    /* border: 2px rgba(0, 0, 0, 0.836) solid; */
+    margin: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 12px  rgb(0, 0, 0);
+    color: rgb(117, 0, 172);
+    transition: all 0.3s ;
+    /* background-color:  rgb(0, 0, 0); */
+    background:  fixed linear-gradient(45deg,rgba(84, 192, 255, 0.76),rgb(84, 138, 255),rgb(130, 113, 228),rgb(95, 84, 255),rgba(55, 0, 255, 0.753));
+}
+
+a:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
