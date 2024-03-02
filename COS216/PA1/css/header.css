@@ -1,5 +1,6 @@
 :root{
-    --theme-primary: fixed linear-gradient(45deg,rgba(84, 192, 255, 0.76),rgb(84, 138, 255),rgb(130, 113, 228),rgb(95, 84, 255),rgba(55, 0, 255, 0.753));
+    --primary-theme: rgb(177, 108, 255);
+    --secondary-theme: rgb(84, 191, 253);
 }
 
 *{
@@ -12,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    /* background: var(--themeSecondary); */
+    /* background: var(--rgb(177, 108, 255)); */
     background: rgba(0, 0, 0, 0.514);
     border-radius: 5px;
 }
@@ -34,13 +35,12 @@
     align-items: center;
     padding: 6px 40px 6px 40px ;
     background: black;
-    position: fixed;
-    margin: 0px;
+    position: sticky;
     box-shadow: 10px 10px 10px -1px rgba(10,99,169,00.16);
     z-index: 999;
     height: 67px;
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 38px;
 
 }
 
@@ -61,9 +61,9 @@
 }
 
 .pages{
-    margin: 5px 10px;
+    margin: 5px 8px;
     height: 45px;
-    width: 95px;
+    width: 105px;
     padding: 7px 11px;
     color: white;
     background: black;
@@ -91,7 +91,7 @@ a.current:hover{
     text-decoration: none;
     color: white;
     /* background:rgb(136, 115, 255); */
-    background:rgb(177, 108, 255);
+    background-color: rgba(84, 191, 253, 0.889);
 }
 
 
@@ -175,7 +175,7 @@ a.current:hover{
 }
 
 .nav-dropbtn:hover{
-    background-color: var(--themeSecondary);
+    background-color: var(--secondary-theme);
 }
 
 
@@ -186,7 +186,7 @@ a.current:hover{
 
 .nav-dropdown-content{
     position: absolute;
-    top: 58px;
+    top: 67px;
     display: none;
     width: 170px;
     background-color: rgba(0, 0, 0, 0.808);
@@ -196,23 +196,24 @@ a.current:hover{
 
 .nav-dropdown-content > a{
     width: 100%;
-    background-color: rgb(177, 108, 255);
+    background-color: var(--primary-theme);
     text-align: center;
     text-decoration: none;
     letter-spacing: 1px;
     padding: 12px 20px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 17px;
     display: inline-block;
     color: white;
     /* background: black; */
     cursor: pointer;
     margin: 0;
+    border-bottom: 0.1px solid rgba(109, 0, 173, 0.489);
 
 }
 
 .nav-dropdown-content > a:hover{
-    background-color: rgba(53, 42, 42, 0.829);
+    background-color: rgb(155, 68, 255);
     text-decoration: none;
     color: white;
 }
