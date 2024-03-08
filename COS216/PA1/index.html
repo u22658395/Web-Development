@@ -14,10 +14,10 @@
         <img id="logo-image" src="../../img/logo/logo-no-background.svg"></img>
 
         <div id="links-container">
-            <a class="pages current" href="../PA1/Find.php">Agents</a>
-            <a class="pages" href="../PA1/Cars.php">Listings</a>
-            <a class="pages" href="../PA1/Brands.php">Favourites</a>
-            <a class="pages" href="../PA1/Compare.php">Calculators</a>
+            <a class="pages" href="agents.html">Agents</a>
+            <a class="pages current" href="#">Listings</a>
+            <a class="pages" href="favorites.html">Favourites</a>
+            <a class="pages" href="calculators.html">Calculators</a>
         </div>
 
         <div class="nav-dropdown">
@@ -40,210 +40,277 @@
         <input id="search-button" type="submit" value="Search">
     </div>
 
+    <div id="filterbar-container">
+        <div class="dropdown">
+            <button id="make-filter-button" class="dropdown-button">Make</button>
+            <div class="dropdown-content" id="checkboxDropdown">
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Subaru"> Subaru</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Suzuki"> Suzuki</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Toyota"> Toyota</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Volkswagen"> Volkswagen</label>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Transmission</button>
+            <div class="dropdown-content" id="checkboxDropdown">
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Automatic"> Automatic</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Manual"> Manual</label>
+                <!-- Add more checkboxes as needed -->
+            </div>
+        </div>
+    
+        <div class="dropdown">
+            <button class="dropdown-button">Bedrooms</button>
+            <div class="dropdown-content" id="checkboxDropdown">
+                <div class="checkbox">
+                    <input  type="range" id="bed-range">
+                    <label for="bed-range">gf</label>
+                </div>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Gasoline"> Gasoline</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Diesel"> Diesel</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Electric"> Electric</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Hybrid"> Hybrid</label>
+                
+                <!-- Add more checkboxes as needed -->
+            </div>
+        </div>
+    
+
+    
+        <div class="dropdown">
+            <button class="dropdown-button">Location</button>
+            <div class="dropdown-content" id="checkboxDropdown">
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Cabriolet"> Cabriolet</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option2"> Option 2</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option3"> Option 3</label>
+                <!-- Add more checkboxes as needed -->
+            </div>
+        </div>
+    
+    
+    
+        <div class="dropdown">
+            <button class="dropdown-button">Price</button>
+            <div class="dropdown-content" id="checkboxDropdown">
+                <div class="checkbox">
+                    <input  type="range" id="price-range">
+                    <label for="price-range">gf</label>
+                </div>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option1"> Option 1</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option2"> Option 2</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option3"> Option 3</label>
+                <!-- Add more checkboxes as needed -->
+            </div>
+        </div>
+    </div>
+
     <div id="content-container">  
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/0c879b2b-6e9c-485f-a02b-5ac208bef583.jpg" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
-            </div>
-            <div class="property-info">
-                <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
-                </div>
-                <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
-                </div>
-                <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
-                </div>
-            </div>
-        </div>
-        
-        <div class="property">
-            <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
-            <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
-            </div>
-            <div class="property-info">
-                <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
-                </div>
-                <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
-                </div>
-                <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
-                </div>
-            </div>
-        </div>
-        
-        <div class="property">
-            <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
-            <div class="property-header">
-                <span class="property-name">Property Name</span>
+                <span class="property-name">3 Bed House in Hatfield</span>
                 <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/double story ho 638268bb-81c1-4cd3-a023-02a978367f90.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/double story ho d92d3189-726c-480b-b655-1dfb239a8176.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120  000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/farm house 17ee79fd-6665-49a4-9b31-1883b8199c2a.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/farm house cacfbcd2-1c2f-40c5-b3d4-03581a8b2e97.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/modern house 1f89dd79-980e-467a-be8f-3d915c6e7fff.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/modern house 31905326-ba4e-4cf3-9524-43512d773d10.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
+            </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
             </div>
         </div>
         
         <div class="property">
             <img class="favor-icon" src="img/icons/star.svg" alt="Favourite">
-            <img src="" alt="" class="property-image">
+            <img src="img/property/modern house cf49786d-7e03-44ac-b669-1d2526611299.png" alt="" class="property-image">
             <div class="property-header">
-                <span class="property-name">Property Name</span>
-                <span class="property-price">R120000</span>
+                <span class="property-name">House in Hatfield</span>
+                <span class="property-price">R120 000</span>
             </div>
             <div class="property-info">
                 <div class="property-location">
-                    <i class="lni lni-map-marker"></i>Location:
+                    <i class="lni lni-map-marker"></i><b>Location:</b> &nbsp;Pretoria
                 </div>
                 <div class="property-bedrooms">
-                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image">Bedrooms:
+                    <img class="info-icons" src="img/icons/bed.svg" alt="bed image"><b>Bedrooms:</b> &nbsp;2
                 </div>
                 <div class="property-bath">
-                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image">Bathrooms:
+                    <img class="info-icons" src="img/icons/shower.svg" alt="bed image"><b>Bathrooms:</b> 4
                 </div>
             </div>
+            <div class="submit-buttons-container">
+                <input class="submit-button" type="button" value="Buy">
+                <input class="submit-button rent-button" type="button" value="Rent">
+            </div>
         </div>
+
         
-        
+    </div>
+    
+    <div class="pages-container">
+        <div id="prev-page-direct" class="page-direct">&lt</div>
+        <div class="page-number current-page">1</div>
+        <div class="page-number">2</div>
+        <div class="page-number">3</div>
+        <div class="page-number">4</div>
+        <div id="next-page-direct" class="page-direct">&gt;</div>
     </div>
 
     <!-- <script src="js/header.js"></script> -->
+    <!-- <script src="filterbar.js"></script> -->
 </body>
 </html>
