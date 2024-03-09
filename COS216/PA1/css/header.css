@@ -12,6 +12,7 @@
     background-color: transparent;
 }
 
+
 ::-webkit-scrollbar-thumb{
     /* background: var(--rgb(177, 108, 255)); */
     background: rgb(0, 0, 0);
@@ -235,4 +236,15 @@ a.current:hover{
         display: none;
         /* z-index: 1;  */
     }
+}
+
+#welcome-text {
+    /* color: white; */
+    font-size: 18px;
+    padding-left: 60px;
+    /* text-align: center; */
+}
+
+#welcome-text > h1,p{
+    margin: 0;
 }

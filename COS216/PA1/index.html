@@ -34,6 +34,13 @@
         </div>
     </div>
 
+    <div id="welcome-text"> 
+        <h1>Listings</h1>
+        <p>
+          Find the value of your desired property in seconds.
+        </p>
+    </div>
+
     <div id="search-container">
         <div id="search-icon"><i class="lni lni-search-alt"></i></div>
         <input id="search-bar" type="text" placeholder="Search listings, agents...">
@@ -41,6 +48,17 @@
     </div>
 
     <div id="filterbar-container">
+        
+        <div class="dropdown">
+            <button class="dropdown-button">Location</button>
+            <div class="dropdown-content" id="checkboxDropdown">
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Cabriolet"> Cabriolet</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option2"> Option 2</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="option3"> Option 3</label>
+                <!-- Add more checkboxes as needed -->
+            </div>
+        </div>
+    
         <div class="dropdown">
             <button id="make-filter-button" class="dropdown-button">Make</button>
             <div class="dropdown-content" id="checkboxDropdown">
@@ -51,15 +69,6 @@
             </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropdown-button">Transmission</button>
-            <div class="dropdown-content" id="checkboxDropdown">
-                <label class="checkbox"><input class="checkInput" type="checkbox" value="Automatic"> Automatic</label>
-                <label class="checkbox"><input class="checkInput" type="checkbox" value="Manual"> Manual</label>
-                <!-- Add more checkboxes as needed -->
-            </div>
-        </div>
-    
         <div class="dropdown">
             <button class="dropdown-button">Bedrooms</button>
             <div class="dropdown-content" id="checkboxDropdown">
@@ -76,20 +85,22 @@
             </div>
         </div>
     
-
-    
         <div class="dropdown">
-            <button class="dropdown-button">Location</button>
+            <button class="dropdown-button">Bathrooms</button>
             <div class="dropdown-content" id="checkboxDropdown">
-                <label class="checkbox"><input class="checkInput" type="checkbox" value="Cabriolet"> Cabriolet</label>
-                <label class="checkbox"><input class="checkInput" type="checkbox" value="option2"> Option 2</label>
-                <label class="checkbox"><input class="checkInput" type="checkbox" value="option3"> Option 3</label>
+                <div class="checkbox">
+                    <input  type="range" id="bath-range">
+                    <label for="bath-range">gf</label>
+                </div>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Gasoline"> Gasoline</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Diesel"> Diesel</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Electric"> Electric</label>
+                <label class="checkbox"><input class="checkInput" type="checkbox" value="Hybrid"> Hybrid</label>
+                
                 <!-- Add more checkboxes as needed -->
             </div>
         </div>
-    
-    
-    
+
         <div class="dropdown">
             <button class="dropdown-button">Price</button>
             <div class="dropdown-content" id="checkboxDropdown">
