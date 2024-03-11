@@ -7,6 +7,20 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 ::-webkit-scrollbar{
     width: 15px;
     background-color: transparent;
@@ -239,10 +253,9 @@ a.current:hover{
 }
 
 #welcome-text {
-    /* color: white; */
     font-size: 18px;
     padding-left: 60px;
-    /* text-align: center; */
+    margin-top: 10px;
 }
 
 #welcome-text > h1,p{

@@ -1,20 +1,5 @@
 @import url(header.css);
 
-html{
-    height: 100%;
-}
-
-body{
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    /* background-color: #002025; */
-    background-color: #ffffff;
-}
-
-
-
 #content-container{
     margin: auto;
     margin-top: 20px;
@@ -22,7 +7,7 @@ body{
     height: 920px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .agency{
