@@ -180,6 +180,12 @@
     /* padding-bottom: 50px; */
 }
 
+.property-anchor{
+    display: block;
+    text-decoration: none;
+    color: #002025;
+}
+
 .property{
     /* border: 2px red solid; */
     height: 382px;

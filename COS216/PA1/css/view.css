@@ -2,10 +2,11 @@
 
 #carousel{
   margin: 30px auto;
-  width: 850px;
+  width: 739px;
   /* border: solid red; */
   display: flex;
-  height:450px
+  height:465px;
+  padding: 30px 0;
 }
 
 .carousel-direction{
@@ -16,6 +17,7 @@
   justify-content: center;
   width: 70px;
   position: relative;
+  color: white;
 }
 
 .direction-image{
@@ -24,8 +26,20 @@
   padding: 19px;
 }
 
+#direction-left{
+  background-color: #011023;
+  /* border: red solid; */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
 #direction-right{
+  background-color: #011023;
   transform: rotate(180deg);
+  /* border: red solid; */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  
 }
 
 .carousel-image{
