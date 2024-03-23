@@ -1,0 +1,263 @@
+:root{
+    --primary-theme: rgb(177, 108, 255);
+    --secondary-theme: #54bffd;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: transparent;
+}
+
+
+::-webkit-scrollbar-thumb{
+    /* background: var(--rgb(177, 108, 255)); */
+    background: rgb(0, 0, 0);
+    /* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-thumb:hover{
+    /* background: rgba(0, 0, 0, 0.562); */
+    background: rgba(92, 170, 214, 0.84);
+    
+}
+
+::-webkit-scrollbar-track{
+    /* background: rgba(87, 55, 55, 0.486) */
+    /* background: rgb(149, 118, 105); */
+    background: rgba(92, 169, 214, 0.29);
+    /* background: rgba(85, 46, 36, 0.521); */
+}
+
+
+.header{
+    display: inline-block;
+    align-items: center;
+    padding: 6px 40px 6px 40px ;
+    background: black;
+    position: sticky;
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,00.16);
+    z-index: 999;
+    height: 67px;
+    width: 100%;
+    margin-bottom: 38px;
+
+}
+
+#logo-image{
+    height: 55px;
+    width: 251px;
+    object-fit: fill;
+    /* margin: 0px 10px 0px 10px; */
+    padding: 2px 0;
+    justify-content: center;
+    /* display: none; */
+}
+
+#links-container{
+    margin: 0 20px 0 0;
+    float: right;
+    
+}
+
+.pages{
+    margin: 5px 8px;
+    height: 45px;
+    width: 105px;
+    padding: 7px 11px;
+    color: white;
+    background: black;
+    display: inline-flex ;
+    text-decoration: none;
+    align-items:center;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+    animation: fadeIn 0.5s ease-out;
+}
+
+a.current{
+    border-bottom: 3px rgb(84, 191, 253) solid;
+    cursor: default;
+}
+
+a.current:hover{
+    background-color: black;
+}
+
+.pages:hover{
+    text-decoration: none;
+    color: white;
+    /* background:rgb(136, 115, 255); */
+    background-color: rgba(84, 191, 253, 0.89);
+}
+
+
+@media only screen and (max-width: 1029px){
+    .pages{
+        display: none;
+        z-index: 1; 
+    }
+
+    #logo-image{
+        display: inline;
+        animation: fadeIn 1s ease-out;
+        height: 100%;
+    }
+
+    .header{
+        padding: 6px 0 6px 40px;
+    }
+
+    
+
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        /* display: none; */
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+        
+    }
+    to{
+        opacity: 0;
+        /* display: none; */
+    }
+}
+
+
+.nav-dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    overflow: hidden;
+    z-index: 1;
+    width: 140px;
+    height: 100%;
+}
+
+.nav-dropbtn{
+    margin: 0;
+    width: 50px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: inherit;
+    padding: 0px ;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    
+    transition: all 0.4s ease 0s;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.lni-menu::before{
+    font-size: 30px;
+    width: 45px;
+    height: 100%;
+    
+}
+
+.nav-dropbtn:hover{
+    background-color: var(--secondary-theme);
+}
+
+
+.nav-dropdown:hover .nav-dropdown-content{
+    display: block;
+
+}
+
+.nav-dropdown-content{
+    position: absolute;
+    top: 67px;
+    display: none;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.808);
+    transition: all 0.4s ease 0s;
+    margin-right: 50px;
+}
+
+.nav-dropdown-content > a{
+    width: 100%;
+    background-color: var(--primary-theme);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    display: inline-block;
+    color: white;
+    /* background: black; */
+    cursor: pointer;
+    margin: 0;
+    border-bottom: 0.1px solid rgba(109, 0, 173, 0.489);
+
+}
+
+.nav-dropdown-content > a:hover{
+    background-color: rgb(155, 68, 255);
+    text-decoration: none;
+    color: white;
+}
+
+.nav-dropdown-content > .logout-btn{
+    height: 35px;
+}
+
+.nav-dropdown-content-show{
+    display:block;
+    animation: fadeIn 0.3s ease-out;
+
+}
+
+@media only screen and (min-width: 1029px){
+    .nav-dropdown{
+        display: none;
+        /* z-index: 1;  */
+    }
+}
+
+#welcome-text {
+    font-size: 18px;
+    padding-left: 60px;
+    margin-top: 10px;
+}
+
+#welcome-text > h1,p{
+    margin: 0;
+}

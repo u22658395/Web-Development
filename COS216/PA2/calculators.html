@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculators.css">
+    <title>Calculators</title>
+</head>
+<body>
+    <div class="header">
+        <img id="logo-image" src="../../img/logo/logo-no-background.svg"></img>
+
+        <div id="links-container">
+            <a class="pages" href="agents.html">Agents</a>
+            <a class="pages" href="index.html">Listings</a>
+            <a class="pages" href="favourites.html">Favourites</a>
+            <a class="pages current" href="#">Calculators</a>
+        </div>
+
+        <div class="nav-dropdown">
+            <div class="nav-dropbtn">
+                <i class="lni lni-menu"></i>
+            </div>
+          
+          <div class="nav-dropdown-content ">
+            <a class="pages" href="agents.html">Agents</a>
+            <a class="pages" href="index.html">Listings</a>
+            <a class="pages" href="favourites.html">Favourites</a>
+            <a class="pages" href="#">Calculators</a>
+          </div>
+        </div>
+    </div>
+
+    <div id="welcome-text"> 
+        <h1>Calculators</h1>
+        <p>
+            Crunch numbers with simplicity. Start calculating now!
+        </p>
+    </div>
+
+
+    <div id="content-container">  
+        <div class="calculator-selector">
+            <span class="calculator-options" id="bond-option">
+                Bond Repayment
+            </span>
+            <span class="calculator-options"id="Affordability">
+                Affordability
+            </span>
+        </div>
+
+        <div id="calculator">
+            <div id="user-input-container">
+                <form action="">
+                    <div class="input-block">
+                        <label class="input-label" for="purchase-price-input">Purchase Price</label>
+                        <input class="user-input" type="number" id="purchase-price-input" placeholder="R1 000 000">
+                    </div>
+                    <div class="input-block">
+                        <label class="input-label" for="deposit-input">Deposit</label>
+                        <input class="user-input" type="number" id="deposit-input" placeholder="R 0">
+                    </div>
+                    <div class="input-block">
+                        <label class="input-label" for="interest-input">Interest Rate</label>
+                        <input class="user-input" type="number" id="interest-input" placeholder="11.75%">
+                    </div>
+                    <div class="input-block">
+                        <label class="input-label" for="term-input">Loan Term</label>
+                        <input class="user-input" type="number" id="term-input" placeholder="20 Years">
+                    </div>
+                </form>
+            </div>
+
+            <div id="calculator-results">
+                <div class="result-heading-container">
+                    <span class="result-heading">Monthly Bond Repayment</span> <span class="result-heading-value">R10 837</span>
+                    <hr>
+                </div>
+                
+                
+                <div class="result-heading-container">
+                    <span class="result-heading">Once-off Costs</span> <span class="result-heading-value">R60 295</span>
+                    <hr>
+                </div>
+
+                <div class="subresult">
+                    <span class="subresult-heading">Deposit</span><span class="subresult-heading-value">R0</span>
+                </div>
+
+                <div class="subresult">
+                    <span class="subresult-heading">Registration</span><span class="subresult-heading-value">R 32 746</span>
+                </div>
+
+                <div class="subresult">
+                    <span class="subresult-heading">Property Transfer</span><span class="subresult-heading-value">R 27 549</span>
+                </div>
+
+                <div class="result-heading-container">
+                    <span class="result-heading">Gross Monthly Income</span> <span class="result-heading-value">R 36 123</span>
+                    <hr>
+                </div>
+                        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
